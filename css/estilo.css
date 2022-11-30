@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+</style> /* imporado desde google, font-family: 'Didact Gothic', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Didact Gothic', sans-serif;/* fuente;*/
+
+}
+.weapper{/* pantalla de incio;*/
+    width: 100vw;/* fuente;*/
+    height: 100vh;
+    background-color: #503d89;
+}
+
+.estiloredes{
+    color: #2b9cbe;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px #503d89
+}
+
+.brand span{
+    color: #2b9cbe;
+}

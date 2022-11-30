@@ -6,21 +6,42 @@
     padding: 0;
 }
 body{
-    font-family: 'Didact Gothic', sans-serif;/* fuente;*/
-
+    font-family: 'Didact Gothic', sans-serif;/* fuente*/
 }
-.weapper{/* pantalla de incio;*/
-    width: 100vw;/* fuente;*/
-    height: 100vh;
-    background-color: #503d89;
+.weapper{/* pantalla de incio*/
+    width: 100vw;/* ancho de la pantalla*/
+    height: 100vh;/*alto de la pantalla*/
+    background-color: #503d89 0.1;
 }
-
+.brand span{
+    color: #2b9cbe; /* color de apellido*/
+}
+.navbar{
+    display: flex;/* poner todo en la misma linea*/
+    justify-content: space-between; /* distanciar las cosas del nav*/
+    padding: 25px; /* distancia a los costados*/
+}
+.menu{
+    display: flex;/* poner todo en la misma linea*/
+    width: 50%; /* separa las palabras del menu*/
+    justify-content: space-around;
+    align-items: center; /* poner todo en la misma linea*/
+}
+.menu a{
+    text-decoration: none;/* quitar el formato de hipervinculo*/
+    text-align: center;/* alinear al centro de la etiqueta*/
+}
+.menu a:hover{
+    color: blanchedalmond;
+}
+.redes{
+ 
+}
 .estiloredes{
     color: #2b9cbe;
     font-size: 35px;
-    text-shadow: 1px 1px 1px #503d89
-}
-
-.brand span{
-    color: #2b9cbe;
+    text-shadow: 1px 1px 1px #503d8
+    }
+.estiloredes:hover{
+    color: antiquewhite;
 }

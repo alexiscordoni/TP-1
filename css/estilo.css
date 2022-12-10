@@ -6,20 +6,33 @@
     padding: 0;
 }
 body{
-    font-family: 'Didact Gothic', sans-serif;/* fuente*/
+    font-family: 'Didact Gothic', sans-serif;/* fuente*/ /*  buscar la fuente Poppins"*/
 }
 .weapper{/* pantalla de incio*/
+    margin: 0;
     width: 100vw;/* ancho de la pantalla*/
     height: 100vh;/*alto de la pantalla*/
-    background-color: #503d89 0.1;
+    background-color: rgb(106, 49, 238);
+}
+
+header{
+    padding left: 30px;
+    padding right: 30px;
 }
 .brand span{
     color: #2b9cbe; /* color de apellido*/
+    
 }
 .navbar{
+    margin: 0 auto;
+    width: 80vw;
     display: flex;/* poner todo en la misma linea*/
     justify-content: space-between; /* distanciar las cosas del nav*/
-    padding: 25px; /* distancia a los costados*/
+    background-color: rgb(49, 238, 90);
+    flex-wrap: nowrap;
+    align-items: center
+    flex-direcction: row;
+
 }
 .menu{
     display: flex;/* poner todo en la misma linea*/
@@ -32,10 +45,11 @@ body{
     text-align: center;/* alinear al centro de la etiqueta*/
 }
 .menu a:hover{
-    color: blanchedalmond;
+    color: blanchedalmond;/* esto es para que cabie el cilor de la letra cunando paso el mause*/
 }
 .redes{
- 
+    align-items: center; /* poner todo en la misma linea*/
+
 }
 .estiloredes{
     color: #2b9cbe;
@@ -43,5 +57,18 @@ body{
     text-shadow: 1px 1px 1px #503d8
     }
 .estiloredes:hover{
-    color: antiquewhite;
+    color: antiquewhite;/* esto es para que cabie el cilor de la letra cunando paso el mause*/
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    align-items: center;
+    background-color: #F5DF4E;
+    display: flex;
+}
+main img{
+    width: 350px;
+    border: 7px solid #2b9cbe;
+    height: 450px;
 }

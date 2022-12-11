@@ -6,7 +6,8 @@
     padding: 0;
 }
 body{
-    font-family: 'Didact Gothic', sans-serif;/* fuente*/ /*  buscar la fuente Poppins"*/
+    font-family: "Poppins", sans-serif;/*esta es la letra importad*/
+    background: #dddddd;/*color de fondo del body*/
 }
 .weapper{/* pantalla de incio*/
     margin: 0;
@@ -45,7 +46,7 @@ header{
     text-align: center;/* alinear al centro de la etiqueta*/
 }
 .menu a:hover{
-    color: blanchedalmond;/* esto es para que cabie el cilor de la letra cunando paso el mause*/
+    color: blanchedalmond;/* esto es para que cambie el color de la letra cunando paso el mause*/
 }
 .redes{
     align-items: center; /* poner todo en la misma linea*/
@@ -53,8 +54,8 @@ header{
 }
 .estiloredes{
     color: #2b9cbe;
-    font-size: 35px;
-    text-shadow: 1px 1px 1px #503d8
+    font-size: 35px;/* alto de los iconos */
+    text-shadow: 1px 1px 1px #503d8 /* esto es para que cabie el color cuano paso el mause*/
     }
 .estiloredes:hover{
     color: antiquewhite;/* esto es para que cabie el cilor de la letra cunando paso el mause*/
@@ -66,9 +67,132 @@ header{
     align-items: center;
     background-color: #F5DF4E;
     display: flex;
+
+}
+.circular--square {
+    border-radius: 50%; /* esto es para darle formato circular a la imagen*/
+}
+/*.info-main{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}*/
+.info-main{
+    background-color: red;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0%, auto;
+    padding: auto;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	align-content: stretch;
+}
+.info-content{
+    background-color: aqua;
+    width: 450px;/* ancho*/
+    height: 500px; /* alto*/
 }
 main img{
-    width: 350px;
-    border: 7px solid #2b9cbe;
-    height: 450px;
+    width: 450px;/* ancho*/
+    border: 10px solid #dddddd; /* borde*/
+    height: 500px; /* alto*/
+    background-color: black;/*color de fondo de la imagen por que esta imagen en si fondo*/
+}
+h2, p  {
+    text-align: center;
+    
+}
+.colordetitulos{
+    background-color: #F5DF4E;
+}
+.secgrande1{
+    background-color: aqua;
+    height: 300px;
+    margin: 0%, auto;
+    display: flex;
+    padding: auto;
+}
+
+.secgrande2{
+    background-color: aqua;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 0%, auto;
+    padding: auto;
+}
+
+.medidas{
+    background-color: rgb(226, 153, 43);
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+.seccion4{
+    margin: 0;
+    width: 100vw;/* ancho de la pantalla*/
+    height: 100vh;/*alto de la pantalla*/
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-around;
+    
+}
+.flex-container{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;/* ancho de la pantalla*/
+    height: 80vh;/*alto de la pantalla*/
+    justify-content: space-evenly;
+	align-items: center;
+	align-content: space-around;
+}
+
+.flex-container div{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40vw;/* ancho de la pantalla*/
+    height: 40vh;/*alto de la pantalla*/
+    text-align: center; 
+    
+}
+
+
+.flex-container div .titulo{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100px;/* color del fonde de la caja */
+    text-align:left; 
+    width: 40vw;/* ancho de la pantalla*/
+    height: 40vh;/*alto de la pantalla*/
+}
+
+.flex-container div .hijos2{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100px;/* color del fonde de la caja */
+    text-align: left; 
+    border-left: #F5DF4E 5px solid;
+    border-bottom: rgb(106, 106, 121) 2px solid;
+    width: 40vw;/* ancho de la pantalla*/
+    height: 40vh;/*alto de la pantalla*/
+}
+.flex-container div .hijos2 h3,p {
+    text-align: left; 
 }

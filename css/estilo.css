@@ -1,198 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
-</style> /* imporado desde google, font-family: 'Didact Gothic', sans-serif;*/
+/* imporado desde google, font-family: 'Didact Gothic', sans-serif;*/
+:root{
+    --github: #3b5999;/*cambia al color original del  logo */
+    --twitter: #55acee;
+    --instagram: #e4405f;
+    --iconos: #252b33;
+    --fondo: #F5DF4E;
+    --gris: #6c757d;
+    }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0; /*le saca a todo el borde  por defecto*/
+    padding: 0; /*le saca a todos el espacio por defecto*/
+    box-sizing: border-box; /*da formato de caja*/
 }
+
 body{
     font-family: "Poppins", sans-serif;/*esta es la letra importad*/
-    background: #dddddd;/*color de fondo del body*/
+    color: var(--color-letras); /*esto es para que cambie al color de la variable */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
 }
-.weapper{/* pantalla de incio*/
-    margin: 0;
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+.nav{
+    display: flex;
+    align-items: center; 
+    align-content: center;
+    list-style: none;/*esto es para sacar los puntitos  */
+    gap: 2rem; /*le da el mismo tamaño a todos los textos  */
+    text-transform: uppercase;
+    letter-spacing: 0.3px;/*sepacion entre leras*/
+    font-weight: 700;
+    color: var(--color-letras);
+}
+
+.nav a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;/*sepacion entre leras*/
+   }
+.redes ul{
+    display: flex;
+    list-style: none;
+    align-items: center; 
+    list-style: none;/*esto es para sacar los puntitos  */
+    gap: 2rem; /*le da el mismo tamaño a todos los textos  */
+    text-transform: uppercase;
+    letter-spacing: 0.3px;/*sepacion entre leras*/
+    font-weight: 700;
+    color: var(--color-letras);
+}
+
+.redes i{
+    transform: scale(1.3);
+    opacity: 0.6;
+    font-size: 16px;
+    }
+
+.redes i:hover{
+        transform: scale(1.5);
+        }
+
+.bi-instagram:hover{
+    color: var(--instagram);
+}
+
+.bi-github:hover{
+color: var(--github);
+}
+.bi-twitter:hover{
+    color: var(--twitter);
+}
+
+.hamburguesa{
+    display: none;
+}
+
+.hero{
+    display: flex;
+    text-align: center;
+    align-items: center; 
     width: 100vw;/* ancho de la pantalla*/
     height: 100vh;/*alto de la pantalla*/
-    background-color: rgb(106, 49, 238);
-}
-
-header{
-    padding left: 30px;
-    padding right: 30px;
-}
-.brand span{
-    color: #2b9cbe; /* color de apellido*/
+    background-color: var(--fondo)
     
 }
-.navbar{
-    margin: 0 auto;
-    width: 80vw;
-    display: flex;/* poner todo en la misma linea*/
-    justify-content: space-between; /* distanciar las cosas del nav*/
-    background-color: rgb(49, 238, 90);
-    flex-wrap: nowrap;
-    align-items: center
-    flex-direcction: row;
 
-}
-.menu{
-    display: flex;/* poner todo en la misma linea*/
-    width: 50%; /* separa las palabras del menu*/
-    justify-content: space-around;
-    align-items: center; /* poner todo en la misma linea*/
-}
-.menu a{
-    text-decoration: none;/* quitar el formato de hipervinculo*/
-    text-align: center;/* alinear al centro de la etiqueta*/
-}
-.menu a:hover{
-    color: blanchedalmond;/* esto es para que cambie el color de la letra cunando paso el mause*/
-}
-.redes{
-    align-items: center; /* poner todo en la misma linea*/
 
+display: flex;
+justify-content: center;
+margin: 0%, auto;
+padding: auto;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: stretch;
+align-content: stretch;
+.herp div{
+    width: 900px;
+height: 500px;
+    background-color: #e4405f;
+    
+    
 }
-.estiloredes{
-    color: #2b9cbe;
-    font-size: 35px;/* alto de los iconos */
-    text-shadow: 1px 1px 1px #503d8 /* esto es para que cabie el color cuano paso el mause*/
-    }
-.estiloredes:hover{
-    color: antiquewhite;/* esto es para que cabie el cilor de la letra cunando paso el mause*/
-}
-.main{
-    margin: 0 auto;
-    width: 80vw;
-    height: 80vh;
-    align-items: center;
-    background-color: #F5DF4E;
-    display: flex;
 
+main img{
+    width: 344px;/* ancho*/
+    border: 10px solid #dddddd; /* borde*/
+    height: 344px; /* alto*/
+    background-color: black;/*color de fondo de la imagen por que esta imagen en si fondo*/
 }
+
 .circular--square {
     border-radius: 50%; /* esto es para darle formato circular a la imagen*/
 }
-/*.info-main{
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-}*/
-.info-main{
-    background-color: red;
-    width: 900px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    margin: 0%, auto;
-    padding: auto;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: stretch;
-	align-content: stretch;
-}
-.info-content{
-    background-color: aqua;
-    width: 450px;/* ancho*/
-    height: 500px; /* alto*/
-}
-main img{
-    width: 450px;/* ancho*/
-    border: 10px solid #dddddd; /* borde*/
-    height: 500px; /* alto*/
-    background-color: black;/*color de fondo de la imagen por que esta imagen en si fondo*/
-}
-h2, p  {
-    text-align: center;
-    
-}
-.colordetitulos{
-    background-color: #F5DF4E;
-}
-.secgrande1{
-    background-color: aqua;
-    height: 300px;
-    margin: 0%, auto;
-    display: flex;
-    padding: auto;
-}
 
-.secgrande2{
-    background-color: aqua;
-    width: 900px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    margin: 0%, auto;
-    padding: auto;
-}
 
-.medidas{
-    background-color: rgb(226, 153, 43);
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
-}
-.seccion4{
-    margin: 0;
-    width: 100vw;/* ancho de la pantalla*/
-    height: 100vh;/*alto de la pantalla*/
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	align-content: space-around;
-    
-}
-.flex-container{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    width: 80vw;/* ancho de la pantalla*/
-    height: 80vh;/*alto de la pantalla*/
-    justify-content: space-evenly;
-	align-items: center;
-	align-content: space-around;
-}
 
-.flex-container div{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 40vw;/* ancho de la pantalla*/
-    height: 40vh;/*alto de la pantalla*/
-    text-align: center; 
-    
+
+@media (max-width:900px) {
+    .nav .menu-ul, .redes{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+        }
+        h1{
+            margin-left: 50px;
+        }
+        .hamburguesa{
+            display: block;
+            margin-right: 15px;
+            font-size: 36px;
+        }
 }
 
 
-.flex-container div .titulo{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100px;/* color del fonde de la caja */
-    text-align:left; 
-    width: 40vw;/* ancho de la pantalla*/
-    height: 40vh;/*alto de la pantalla*/
-}
-
-.flex-container div .hijos2{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100px;/* color del fonde de la caja */
-    text-align: left; 
-    border-left: #F5DF4E 5px solid;
-    border-bottom: rgb(106, 106, 121) 2px solid;
-    width: 40vw;/* ancho de la pantalla*/
-    height: 40vh;/*alto de la pantalla*/
-}
-.flex-container div .hijos2 h3,p {
-    text-align: left; 
-}
